@@ -9,10 +9,9 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   return MaterialApp(
-     home: PageOne(),
-     
-   );
+    return MaterialApp(
+      home: PageOne(),
+    );
   }
 }
 
@@ -27,7 +26,45 @@ class _PageOneState extends State<PageOne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ,
+      body: Column(
+        children: [
+         
+
+          Container(
+            child: Column(
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.orange,
+                  margin: EdgeInsets.only(bottom: 20),
+                ),
+
+                Container(
+                  width: 200,
+                  height: 100,
+                  color: Colors.pink,
+                  margin: EdgeInsets.only(bottom: 20),
+                ),
+                Container(
+                  width: 100,
+                  height: 50,
+                  color: Colors.blue,
+                  margin: EdgeInsets.only(bottom: 20),
+                ),
+
+              ],
+            ),
+
+            height: 600,
+            width: 300,
+            color: Colors.amberAccent,
+            margin: EdgeInsets.only(bottom: 20),
+          ),
+
+         
+        ],
+      ),
     );
   }
 }
